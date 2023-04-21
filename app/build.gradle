@@ -1,0 +1,168 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+    id 'kotlin-android-extensions'
+
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.azamovhudstc.youtubeclone"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    /**
+     * Def Version
+     * */
+    def lottieVersion = "3.4.0"
+    def room_version = "2.4.3"
+
+    /**
+     * Retrofit2
+     * */
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+
+    /**
+     * Mask Edittext
+     * */
+    implementation 'io.github.vicmikhailau:MaskedEditText:4.0.7'
+//
+
+    /**
+     * Navigation Fragment
+     * */
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+
+    /**
+     * OkHttp
+     * */
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.3")
+
+    /**
+     * CircleImageView
+     */
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+
+    /**
+     * LottieAnimation
+     * */
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+
+    /**
+     * FaceBookShimmer
+     * */
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+
+    /**
+     * Dots Indicator
+     * */
+    implementation("com.tbuonomo:dotsindicator:4.3")
+
+
+
+
+    /**
+     * SmoothBottomBar
+     * */
+    implementation 'com.github.st235:expandablebottombar:1.5.1'
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
+
+
+    /**
+     * Room ORM
+     * */
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.10"
+
+
+    /**
+     * Glide
+     * */
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+
+    /**
+     * LiquidSwipe
+     * */
+    implementation 'com.github.SWRevo:LiquidSwipe:1.0.0'
+
+    /**
+     * DI Dagger Hilt
+     * */
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+    implementation 'androidx.hilt:hilt-navigation-fragment:1.0.0'
+
+
+    /**
+     * PinView
+     * */
+    implementation 'com.github.poovamraj:PinEditTextField:1.2.6'
+
+    /**
+     * Logging interceptor
+     * */
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+
+
+    /**
+     * Material Spinner
+     * **/
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
+
+
+    /**
+     *Waiting Dialog Animate Dialog
+     **/
+    def dialogx_version = "0.0.47.beta15"
+    implementation "com.kongzue.dialogx:DialogX:${dialogx_version}"
+
+
+    /**
+     * FancyGifDialog-Android
+     **/
+}

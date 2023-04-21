@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginVertical="1dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/banner_img"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:id="@+id/channel_profile_img"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/profile"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_img" />
+
+    <TextView
+        android:layout_width="264dp"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/video_name"
+        android:text="The Beauty of Existence - Heart Touching Nasheed"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/channel_profile_img"
+        app:layout_constraintTop_toTopOf="@+id/channel_profile_img" />
+
+    <TextView
+        android:layout_width="261dp"
+        android:layout_marginTop="8dp"
+        android:text="19,210,251 viewsJul • 1, 2016"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/video_name"
+        app:layout_constraintTop_toBottomOf="@+id/video_name" />
+
+    <ImageView
+        android:layout_width="14dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more"
+        app:layout_constraintBottom_toBottomOf="@+id/video_name"
+        app:layout_constraintStart_toEndOf="@+id/video_name"
+        app:layout_constraintTop_toTopOf="@+id/video_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
