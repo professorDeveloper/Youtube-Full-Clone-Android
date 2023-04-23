@@ -7,7 +7,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="90dp"
         android:layout_height="25dp"
 
         android:layout_marginStart="14dp"
@@ -19,8 +19,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginEnd="12dp"
         android:src="@drawable/profile"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -29,10 +29,10 @@
 
     <ImageView
         android:id="@+id/main_search"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginEnd="15dp"
-
+        android:background="?selectableItemBackgroundBorderless"
         android:src="@drawable/search"
         app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
         app:layout_constraintEnd_toStartOf="@+id/circleImageView"
@@ -40,8 +40,9 @@
 
     <ImageView
         android:id="@+id/notification_home"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="20dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:layout_height="20dp"
         android:layout_marginEnd="19dp"
         android:src="@drawable/notification"
         app:layout_constraintBottom_toBottomOf="@+id/main_search"
@@ -50,13 +51,15 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="?selectableItemBackgroundBorderless"
         android:layout_marginEnd="18dp"
         android:src="@drawable/sharescreen"
         app:layout_constraintBottom_toBottomOf="@+id/notification_home"
         app:layout_constraintEnd_toStartOf="@+id/notification_home"
-        app:layout_constraintTop_toTopOf="@+id/notification_home" />
+        app:layout_constraintTop_toTopOf="@+id/notification_home"
+        app:tint="#424242" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/category_rv"
@@ -72,9 +75,12 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_rv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="12dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/category_rv"
         app:layout_constraintVertical_bias="1.0"
