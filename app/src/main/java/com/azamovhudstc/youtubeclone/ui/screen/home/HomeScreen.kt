@@ -3,11 +3,14 @@ package com.azamovhudstc.youtubeclone.ui.screen.home
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
 import com.azamovhudstc.youtubeclone.R
 import com.azamovhudstc.youtubeclone.data.model.*
 import com.azamovhudstc.youtubeclone.ui.adapter.CategoryAdapter
 import com.azamovhudstc.youtubeclone.ui.adapter.HomeVideoAdapter
 import kotlinx.android.synthetic.main.home_screen.*
+import kotlinx.android.synthetic.main.home_screen.view.*
+
 
 class HomeScreen : Fragment(R.layout.home_screen) {
     private val categoryAdapter by lazy { CategoryAdapter() }
@@ -72,6 +75,22 @@ class HomeScreen : Fragment(R.layout.home_screen) {
                 banner = "https://i.ytimg.com/vi/VG90vMD-0s8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC1N4_E1IPgEbX_7RuL7fy0WTFhKQ",
                 dateAndView = "874,075 views  27 Feb 2023  16 Mar 2023",
                 profileUrl = "https://yt3.googleusercontent.com/4RHObckSZMLLb39v17n6P57MAbE_ECGQABtyAoTb5PrLzaCvTG6xVqNh9Ch8rFrf9Q-7N7tI4g=s176-c-k-c0x00ffffff-no-rj"
+            )
+        )
+        arrayList.add(
+            HomeItem(
+                title = "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+                banner = "https://i.ytimg.com/vi/IMp9bwsqF7I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLConwsyJRkiX8Q8PNsy5OfbB3umog",
+                dateAndView = "232,526 views  16 Mar 2023",
+                profileUrl = "https://yt3.googleusercontent.com/8aKzIdHYClPdf7boaswfgeDJIyizKXfmv0X1hTrwCkRkuPLuvnvFAY5YCXx4WibICSm1AG32=s176-c-k-c0x00ffffff-no-rj"
+            )
+        )
+        arrayList.add(
+            HomeItem(
+                title = "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+                banner = "https://i.ytimg.com/vi/IMp9bwsqF7I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLConwsyJRkiX8Q8PNsy5OfbB3umog",
+                dateAndView = "232,526 views  16 Mar 2023",
+                profileUrl = "https://yt3.googleusercontent.com/8aKzIdHYClPdf7boaswfgeDJIyizKXfmv0X1hTrwCkRkuPLuvnvFAY5YCXx4WibICSm1AG32=s176-c-k-c0x00ffffff-no-rj"
             )
         )
         return arrayList
