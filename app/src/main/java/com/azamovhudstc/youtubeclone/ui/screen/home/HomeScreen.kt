@@ -48,10 +48,10 @@ class HomeScreen : Fragment(R.layout.home_screen) {
         val arrayList = ArrayList<AllData>()
         arrayList.add(
             HomeItem(
-                title = "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
-                banner = "https://i.ytimg.com/vi/IMp9bwsqF7I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLConwsyJRkiX8Q8PNsy5OfbB3umog",
+                title = "Miguel Becomes a Beast - Cobra Kai",
+                banner = "https://i.ytimg.com/vi/QjqVVZCR5gE/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDTKHRD6FUUTLHezixNqmk30uGiUA",
                 dateAndView = "232,526 views  16 Mar 2023",
-                profileUrl = "https://yt3.googleusercontent.com/8aKzIdHYClPdf7boaswfgeDJIyizKXfmv0X1hTrwCkRkuPLuvnvFAY5YCXx4WibICSm1AG32=s176-c-k-c0x00ffffff-no-rj"
+                profileUrl =                 "https://yt3.ggpht.com/Rd-0_TWzcwjGbo2wiFtly5j2p-3rvOtfhLIsJ34Wdk5vUqlpIM8ovRI3cAANSMeTniRSQ1UL0A=s48-c-k-c0x00ffffff-no-rj"
             )
         )
         arrayList.add(ShortHomeItem(list = loadShortData()))

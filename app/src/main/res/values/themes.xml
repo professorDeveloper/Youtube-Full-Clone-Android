@@ -14,4 +14,11 @@
         <item name="android:statusBarColor" tools:targetApi="l">#757575</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.MyTask.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenAnimationDuration">800</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/icon</item>
+        <item name="postSplashScreenTheme">@style/Theme.YoutubeClone</item>
+    </style>
+
 </resources>
